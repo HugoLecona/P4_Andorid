@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Principal">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="319dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/p1titulo"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/p1btnar"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/p1actresp"
+        app:layout_constraintEnd_toEndOf="@+id/p1btnap"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/p1btnap"
+        app:layout_constraintTop_toBottomOf="@+id/p1btnap"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/p1btnab"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/p1actbase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/p1btnap"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/p1actparce"
+        app:layout_constraintEnd_toEndOf="@+id/p1btnab"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/p1btnab"
+        app:layout_constraintTop_toBottomOf="@+id/p1btnab"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/p1txtnombre"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="248dp"
+        android:autofillHints="nombre"
+        android:ems="10"
+        android:hint="@string/p1ingnombre"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/p1txtcorreo"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:autofillHints="correo"
+        android:ems="10"
+        android:hint="@string/p1ingcorreo"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p1txtedad" />
+
+    <EditText
+        android:id="@+id/p1txtedad"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:autofillHints="edad"
+        android:ems="10"
+        android:hint="@string/p1ingedad"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p1txtnombre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
